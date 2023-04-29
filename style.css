@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: hsl(180, 2%, 12%);
+    --bg: hsl(180, 11%, 19%);
     --text: #a07a7a;
     --subtext: #b8b8b8;
     --linktext: #b88d20;
@@ -144,5 +144,8 @@ figcaption {
 }
 
 p {
+  text-align: center;
+}
+h2 {
   text-align: center;
 }
