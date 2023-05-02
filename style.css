@@ -1,0 +1,151 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(180, 11%, 19%);
+    --text: #a07a7a;
+    --subtext: #b8b8b8;
+    --linktext: #b88d20;
+    --underline: #444444;
+    --sectionbg: #18181e;
+    --buttoncolor: #f3efef;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fdfbfb;
+    --text: #000000;
+    --subtext: #8f8f8f;
+    --linktext: #cb782f;
+    --underline: #fffafa;
+    --sectionbg: #ffffff;
+    --buttoncolor: #fbf7f7;
+  }
+}
+
+body {
+  font-family: "Helvetica";
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin: 40px 0;
+}
+
+.header__avatar {
+  border-radius: 15%;
+  margin-left: 55px;
+}
+
+.header__title {
+  margin: 30px 0 10px 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.header__subtitle {
+  text-align: center;
+  color: var(--subtext);
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.links__link:last-child {
+  border-bottom: none;
+}
+
+footer {
+  margin: 0 0 50px 0;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: var(--buttoncolor);
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.social-icons>li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.social-icons a {
+  position: relative;
+  background-color: #e3cd3b;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.social-icons a:hover {
+  background-color: #6e6046;
+}
+
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 0.65rem;
+  top: 0.65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.social-icons .social-icon-twitter::before {
+  background-image: none;
+}
+
+.social-icons .social-icon-fb::before {
+  background-image: none;
+}
+
+.social-icons .social-icon-vk::before {
+  background-image: none;
+}
+
+.social-icons .social-icon-telegram::before {
+  background-image: none;
+}
+
+.social-icons .social-icon-youtube::before {
+  background-image: none;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.man {
+  margin: 10px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
